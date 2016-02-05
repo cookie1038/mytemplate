@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>博文列表</title>
+    <meta name="description" content="html5 materialize template">
+    <meta name="keywords" content="html5, materialize, material, material design">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--Import styles-->
+    <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/plugins/prism/prism.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/screen.css" />
+</head>
+
+<body>
+
+    <header class="navbar-fixed">
+        <nav id="headNav" class="bf-blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="brand-logo">
+                        <a href="#!" class="waves-effect waves-light">
+                            <img src="assets/images/logo.png" class="logo-img hide-on-small-only">
+                            <span class="logo-span">Blinkfox</span>
+                        </a>
+                    </div>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+                    <ul class="right">
+                        <li class="hide-on-med-and-down">
+                            <a href="#" class="waves-effect waves-light">首页</a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="#" class="waves-effect waves-light">关于</a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="#" class="waves-effect waves-light">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#!" id="toggle-search" class="waves-effect waves-light">
+                                <i id="searchIcon" class="mdi-action-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="side-nav" id="mobile-nav">
+                        <div class="mobile-head bf-blue">
+                            <img src="assets/images/head_pic.jpg" class="logo-img circle responsive-img">
+                            <div class="logo-name">Blinkfox</div>
+                            <div class="logo-desc">从来没有真正的绝境，只有心灵的迷途</div>
+                        </div>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="fa fa-home fa-lg fa-fw"></i>首页
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="fa fa-book fa-lg fa-fw"></i>关于
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="fa fa-comment fa-lg fa-fw"></i>联系我们
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="socail-link">
+                            <a href="https://github.com/blinkfox" class="tooltipped" target="_blank"
+                                data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+                                <i class="fa fa-github fa-lg"></i>
+                            </a>
+                            <a href="mailto:chenjiayin1990@163.com" class="tooltipped" target="_blank"
+                                data-tooltip="邮件联系我" data-position="top" data-delay="50">
+                                <i class="fa fa-envelope fa-lg"></i>
+                            </a>
+                            <a href="#!" class="tooltipped" data-tooltip="QQ号：1181062873"
+                                data-position="top" data-delay="50">
+                                <i class="fa fa-qq fa-lg"></i>
+                            </a>
+                            <a href="#!" class="tooltipped" data-tooltip="RSS" target="_blank"
+                                data-position="top" data-delay="50" >
+                                <i class="fa fa-rss fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 搜索遮罩框 -->
+    <div id="search-mask" style="display: none;">
+        <form class="search-form" action="#!" autocomplete="off">
+            <a href="#!" onclick="return false;" class="search-close">
+                <i class="mdi-navigation-close"></i>
+            </a>
+            <div class="container row search-container">
+                <div class="col offset-s1 s10 offset-m2 m8 offset-l2 l8">
+                    <div class="search-label center-align">
+                        <label for="s">输入关键字后‘回车’即可</label>
+                    </div>
+                    <div>
+                        <input type="search" id="searchKey" name="s" class="search-input" autofocus="">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.0/jquery.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/plugins/jquery/jquery-2.2.0.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="assets/plugins/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>

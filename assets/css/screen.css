@@ -1,0 +1,119 @@
+/*全局样式*/
+body {
+    background-color: #e5e5e5;
+    margin: 0;
+}
+.container {
+    width: 90%;
+}
+.container .row {
+    margin-bottom: 0px;
+}
+.bf-blue {
+    background-color: #3f51b5 !important;
+}
+
+/*导航栏样式*/
+@media only screen and (max-width: 600px) {
+    header nav .brand-logo {
+        left: 100px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+header .brand-logo .logo-img {
+    height: 38px;
+    vertical-align: middle;
+}
+header .button-collapse i {
+    font-size: 1.9rem;
+}
+header .side-nav .mobile-head {
+    padding: 0 15px;
+}
+header .side-nav .mobile-head img {
+    margin-top: 30px;
+    width: 75px;
+    height: 75px;
+}
+header .side-nav .mobile-head .logo-name {
+    margin-top: -25px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+header .side-nav .mobile-head .logo-desc {
+    margin-top: -15px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: #ccc;
+}
+header .side-nav .menu-list a{
+    height: 50px;
+    line-height: 50px;
+}
+header .side-nav .fa-fw {
+    width: 3.8rem;
+    text-align: left;
+}
+header .side-nav .socail-link {
+    position: absolute;
+    bottom: 40px;
+    padding-left: 10px;
+}
+header .side-nav .socail-link a {
+    display: initial;
+}
+
+/*搜索层样式*/
+#search-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #673AB7;
+    opacity: 0.96;
+    z-index: 999;
+}
+#search-mask a {
+    color: #fff;
+}
+#search-mask .search-form {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#search-mask .search-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#search-mask .search-close i {
+    font-size: 2.3rem;
+}
+#search-mask .search-container {
+    position: fixed;
+    top: 35%;
+}
+#search-mask .search-container .search-label label {
+    font: 300 1.3rem Roboto;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#search-mask .search-container .search-input {
+    padding-bottom: 5px;
+    margin-top: 20px;
+    height: auto;
+    font: 400 4rem Roboto;
+    color: #fff;
+    text-align: center;
+    border: none;
+}
