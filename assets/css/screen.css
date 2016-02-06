@@ -171,3 +171,15 @@ footer .copy-right {
     text-align: center;
     border: none;
 }
+.top-scroll {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 998;
+}
+.top-scroll i {
+    font-size: 2.2rem;
+}
