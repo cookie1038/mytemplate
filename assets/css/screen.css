@@ -9,10 +9,10 @@ body {
 .container .row {
     margin-bottom: 0px;
 }
-.bf-blue {
+.bf-color {
     background-color: #3f51b5 !important;
 }
-.bf-text-blue {
+.bf-text-color {
     color: #3f51b5 !important;
 }
 
@@ -29,7 +29,7 @@ header .brand-logo .logo-img {
     vertical-align: middle;
 }
 header .button-collapse i {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 }
 header .side-nav .mobile-head {
     padding: 0 15px;
@@ -62,11 +62,12 @@ header .side-nav .fa-fw {
 }
 header .side-nav .socail-link {
     position: absolute;
-    bottom: 40px;
+    bottom: 35px;
     padding-left: 10px;
 }
 header .side-nav .socail-link a {
     display: initial;
+    padding: 0 12px;
 }
 
 /*内容头部样式*/
@@ -74,7 +75,6 @@ header .side-nav .socail-link a {
     margin-bottom: -60px;
     padding-bottom: 100px;
     color: #fff;
-    background-color: #3f51b5;
     z-index: 0;
     overflow: hidden;
     transition: background-color .3s cubic-bezier(.4,0,.2,1),color .3s cubic-bezier(.4,0,.2,1);
@@ -102,7 +102,7 @@ article .article-tags .chip {
 
 /*搜索层样式*/
 #search-mask {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -137,7 +137,7 @@ article .article-tags .chip {
     top: 35%;
 }
 #search-mask .search-container .search-label label {
-    font: 300 1.3rem Roboto;
+    font: 300 1.2rem Roboto;
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
@@ -146,7 +146,7 @@ article .article-tags .chip {
     padding-bottom: 5px;
     margin-top: 20px;
     height: auto;
-    font: 400 4rem Roboto;
+    font: 400 2rem Roboto;
     color: #fff;
     text-align: center;
     border: none;
