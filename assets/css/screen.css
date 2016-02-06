@@ -60,9 +60,9 @@ header .side-nav .fa-fw {
     width: 3.8rem;
     text-align: left;
 }
-header .side-nav .socail-link {
+header .side-nav .social-link {
     position: absolute;
-    bottom: 35px;
+    bottom: 40px;
     padding-left: 10px;
 }
 .social-link a {
@@ -98,6 +98,15 @@ article .article-tags .chip {
     line-height: 22px;
     color: #fff;
     border-radius: 10px;
+}
+.paging .page-info {
+    font-size: 1.4rem;
+    color: #666;
+    height: 2.4rem;
+    line-height: 2.8rem;
+}
+.paging i {
+    font-size: 2.5rem;
 }
 
 /*尾部样式*/
