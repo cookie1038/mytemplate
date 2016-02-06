@@ -1,1 +1,1 @@
-这是我写的Material Design设计响应式的网页模板，供以后使用
+这是我写的采用Material Design设计的响应式网页模板，供学习及以后使用
