@@ -16,6 +16,44 @@ body {
     color: #3f51b5 !important;
 }
 
+/*各颜色样式*/
+.bf-blue {
+    background-color: #3f51b5 !important;
+}
+.bf-text-blue {
+    color: #3f51b5 !important;
+}
+.bf-red {
+    background-color: red !important;
+}
+.bf-text-red {
+    color: red !important;
+}
+.bf-orange {
+    background-color: orange !important;
+}
+.bf-text-orange {
+    color: orange !important;
+}
+.bf-yellow {
+    background-color: yellow !important;
+}
+.bf-text-yellow {
+    color: yellow !important;
+}
+.bf-green {
+    background-color: green !important;
+}
+.bf-text-green {
+    color: green !important;
+}
+.bf-purple {
+    background-color: purple !important;
+}
+.bf-text-purple {
+    color: purple !important;
+}
+
 /*头部导航栏样式*/
 @media only screen and (max-width: 600px) {
     header nav .brand-logo {
@@ -171,6 +209,47 @@ footer .copy-right {
     text-align: center;
     border: none;
 }
+
+/*主题颜色设置面板样式*/
+#theme-change {
+    position: fixed;
+    padding: 15px;
+    top: 160px;
+    left: -200px;
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+    z-index: 998;
+    border: 1px solid;
+    border-left: none;
+}
+#theme-change .theme-change-handle {
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: 45px;
+    top: -1px;
+    right: -47px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-left: none;
+}
+#theme-change .theme-change-handle i {
+    font-size: 2.2rem;
+}
+#theme-change .theme-change-container ul li {
+    width: 150px;
+    height: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#theme-change .theme-change-container ul li.selected {
+    outline: 2px solid black;
+}
+
+/*回到顶部按钮样式*/
 .top-scroll {
     display: none;
     position: fixed;
