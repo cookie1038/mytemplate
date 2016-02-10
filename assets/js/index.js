@@ -7,18 +7,35 @@ function replaceClass(color, c) {
         for (var i = 0; i < cls.length; i++) {
             var cl = cls[i];
             if ((cl.indexOf(c) < 0) || ((c + 'color') == cl)) {
-                newCls = (i == cls.length - 1) ? newCls + cl : newCls + cl + ' ' ;
+                newCls = (i == cls.length - 1) ? newCls + cl : newCls + cl + ' ';
             }
         }
-        console.log('颜色样式：' + c + ',新样式：' + newCls);
+        newCls = $.trim(newCls);
         $(this).attr('class', newCls);
         $(this).addClass(c + color);
     });
 }
 
+/*设置本地颜色到localStorage中*/
+function setLocalTheme(color) {
+    if (color) {
+        window.localStorage.setItem('bfTheme', color);
+    }
+}
+
+/*初始化主题颜色*/
+function initTheme() {
+    var color = window.localStorage.getItem('bfTheme');
+    if (color) {
+        replaceClass(color, 'bf-');
+        replaceClass(color, 'bf-text-');
+    }
+}
+
 $(function() {
     /*菜单切换*/
     $('.button-collapse').sideNav();
+    initTheme();
 
     /*显示和隐藏搜索*/
     $('#searchIcon').click(function() {
@@ -50,13 +67,24 @@ $(function() {
         var color = $(this).attr('data-colors');
         replaceClass(color, 'bf-');
         replaceClass(color, 'bf-text-');
+        setLocalTheme(color);
     });
 
     /*回到顶部*/
     $('.scrollSpy').scrollSpy();
-    /*回到顶部按钮根据滚动条的位置的显示和隐藏*/
-    $(window).scroll(function(event){
+
+    /*监听滚动条位置*/
+    $(window).scroll(function(event) {
         var t = $(window).scrollTop();
+        /*导航栏位置监听*/
+        var nav = $('#headNav');
+        if (t < 15) {
+            nav.addClass('none-shadow');
+        } else {
+            nav.removeClass('none-shadow');
+        }
+
+        /*回到顶部按钮根据滚动条的位置的显示和隐藏*/
         var ts = $('.top-scroll');
         if (t < 50) {
             ts.hide();
@@ -65,14 +93,5 @@ $(function() {
         }
     });
 
-    /*监听滚动条位置*/
-    $(window).scroll(function(event){
-        var t = $(window).scrollTop();
-        var nav = $('#headNav');
-        if (t < 5) {
-            nav.addClass('none-shadow');
-        } else {
-            nav.removeClass('none-shadow');
-        }
-    });
+
 });

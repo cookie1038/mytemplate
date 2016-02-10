@@ -26,29 +26,29 @@ body {
 .bf-text-blue {
     color: #3f51b5 !important;
 }
+.bf-pink {
+    background-color: #e91e63 !important;
+}
+.bf-text-pink {
+    color: #e91e63 !important;
+}
 .bf-red {
-    background-color: red !important;
+    background-color: #db4437 !important;
 }
 .bf-text-red {
-    color: red !important;
+    color: #db4437 !important;
 }
 .bf-orange {
-    background-color: orange !important;
+    background-color: #ff9800 !important;
 }
 .bf-text-orange {
-    color: orange !important;
-}
-.bf-yellow {
-    background-color: yellow !important;
-}
-.bf-text-yellow {
-    color: yellow !important;
+    color: #ff9800 !important;
 }
 .bf-green {
-    background-color: green !important;
+    background-color: #0f9d58 !important;
 }
 .bf-text-green {
-    color: green !important;
+    color: #0f9d58 !important;
 }
 .bf-purple {
     background-color: purple !important;
