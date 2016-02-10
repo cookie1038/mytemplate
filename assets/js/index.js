@@ -64,4 +64,15 @@ $(function() {
             ts.show();
         }
     });
+
+    /*监听滚动条位置*/
+    $(window).scroll(function(event){
+        var t = $(window).scrollTop();
+        var nav = $('#headNav');
+        if (t < 5) {
+            nav.addClass('none-shadow');
+        } else {
+            nav.removeClass('none-shadow');
+        }
+    });
 });
