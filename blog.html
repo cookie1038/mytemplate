@@ -24,7 +24,7 @@
 <body>
 
     <!-- 头部导航区 -->
-    <header id="topScroll" class="navbar-fixed">
+    <header class="navbar-fixed">
         <nav id="headNav" class="bf-color none-shadow">
             <div class="container">
                 <div class="nav-wrapper">
@@ -100,7 +100,7 @@
         <div class="content-heading bf-color">
             <div class="container">
                 <div class="row">
-                    <div class="col s12 offset-m2 m8 offset-l2 l8">
+                    <div class="col s12 m12 l12">
                         <h3 class="heading">闪烁之狐</h3>
                     </div>
                 </div>
@@ -108,44 +108,76 @@
         </div>
         <!-- 头部提醒文字 -->
         <div class="container notice">
-            <div class="row">
-                <div class="col s12 offset-m1 m10 offset-l2 l8">
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa fa-volume-up fa-lg fa-fw bf-text-color"></i> 梦想面前做好自信的自己，自信可以改变未来。每一朵花都有开放的理由，你要始终坚信， 你就是你，一个独一无二的你，任何人都无法替代，不要因为别人的否定就轻易放弃， 活在别人的世界里是一种悲哀，你要活出自己的本色。只要心在，梦就在，成功之前总是会遭受很多的磨砺， 但是只要坚持做好手边的事，自然会有意外不到的收获。
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa fa-volume-up fa-lg fa-fw bf-text-color"></i> 梦想面前做好自信的自己，自信可以改变未来。每一朵花都有开放的理由，你要始终坚信， 你就是你，一个独一无二的你，任何人都无法替代，不要因为别人的否定就轻易放弃， 活在别人的世界里是一种悲哀，你要活出自己的本色。只要心在，梦就在，成功之前总是会遭受很多的磨砺， 但是只要坚持做好手边的事，自然会有意外不到的收获。
                 </div>
             </div>
         </div>
         <!-- 所有文章卡片 -->
-        <article class="container">
+        <article id="articles" class="container">
             <div class="row">
-                <div class="col s12 m6 l4 article">
+                <div class="article col s12 m6 l4">
+                    <div class="card">
+                        <a href="#!" target="_blank">
+                            <div class="card-image">
+                                <img src="assets/images/default.jpg" alt="文章特色图片">
+                                <span class="card-title">这个是文章标题</span>
+                            </div>
+                            <div class="card-content article-content">
+                                <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想， 那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a class="bf-text-gray">
+                                            <i class="fa fa-calendar fa-fw"></i>4天前
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" target="_blank" class="bf-text-gray">
+                                            <i class="fa fa-user fa-fw"></i>Blinkfox
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-action article-tags">
+                                <a href="#!" target="_blank">
+                                    <span class="chip bf-color">Java</span>
+                                </a>
+                                <a href="#!" target="_blank">
+                                    <span class="chip bf-color">Linux</span>
+                                </a>
+                                <a href="#!" target="_blank">
+                                    <span class="chip bf-color">Ghost</span>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article col s12 m6 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="assets/images/default.jpg" alt="文章特色图片">
-                            <span class="card-title">这个是文章标题</span>
+                            <img src="assets/images/default2.jpg" alt="文章默认特色图片">
+                            <span class="card-title">这个是文章标题这个是文章标题这个是文章标题</span>
                         </div>
                         <div class="card-content article-content">
-                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想，
-                                那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
+                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想， 那么你最终辉得到一杯苦水。
                             </p>
                             <ul>
                                 <li>
-                                    <a class="bf-text-color">
+                                    <a class="bf-text-gray">
                                         <i class="fa fa-calendar fa-fw"></i>4天前
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" target="_blank" class="bf-text-color">
+                                    <a href="#!" target="_blank" class="bf-text-gray">
                                         <i class="fa fa-user fa-fw"></i>Blinkfox
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-action article-tags">
-                            <i class="fa fa-tag fa-lg fa-fw bf-text-color"></i>
                             <span class="chip bf-color">Java</span>
                             <span class="chip bf-color">Linux</span>
                             <span class="chip bf-color">Ghost</span>
@@ -153,31 +185,29 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 article">
+                <div class="article col s12 m6 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="assets/images/default.jpg" alt="文章默认特色图片">
+                            <img src="assets/images/default2.jpg" alt="文章特色图片">
                             <span class="card-title">这个是文章标题</span>
                         </div>
                         <div class="card-content article-content">
-                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想，
-                                那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
+                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想， 那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
                             </p>
                             <ul>
                                 <li>
-                                    <a class="bf-text-color">
+                                    <a class="bf-text-gray">
                                         <i class="fa fa-calendar fa-fw"></i>4天前
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" target="_blank" class="bf-text-color">
+                                    <a href="#!" target="_blank" class="bf-text-gray">
                                         <i class="fa fa-user fa-fw"></i>Blinkfox
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-action article-tags">
-                            <i class="fa fa-tag fa-lg fa-fw bf-text-color"></i>
                             <span class="chip bf-color">Java</span>
                             <span class="chip bf-color">Linux</span>
                             <span class="chip bf-color">Ghost</span>
@@ -185,31 +215,29 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 article">
+                <div class="article col s12 m6 l4">
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/images/default.jpg" alt="文章特色图片">
                             <span class="card-title">这个是文章标题</span>
                         </div>
                         <div class="card-content article-content">
-                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想，
-                                那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
+                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想， 那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
                             </p>
                             <ul>
                                 <li>
-                                    <a class="bf-text-color">
+                                    <a class="bf-text-gray">
                                         <i class="fa fa-calendar fa-fw"></i>4天前
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" target="_blank" class="bf-text-color">
+                                    <a href="#!" target="_blank" class="bf-text-gray">
                                         <i class="fa fa-user fa-fw"></i>Blinkfox
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-action article-tags">
-                            <i class="fa fa-tag fa-lg fa-fw bf-text-color"></i>
                             <span class="chip bf-color">Java</span>
                             <span class="chip bf-color">Linux</span>
                             <span class="chip bf-color">Ghost</span>
@@ -217,31 +245,29 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 article">
+                <div class="article col s12 m6 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="assets/images/default.jpg" alt="文章特色图片">
+                            <img src="assets/images/default2.jpg" alt="文章特色图片">
                             <span class="card-title">这个是文章标题</span>
                         </div>
                         <div class="card-content article-content">
-                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想，
-                                那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
+                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想， 那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
                             </p>
                             <ul>
                                 <li>
-                                    <a class="bf-text-color">
+                                    <a class="bf-text-gray">
                                         <i class="fa fa-calendar fa-fw"></i>4天前
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" target="_blank" class="bf-text-color">
+                                    <a href="#!" target="_blank" class="bf-text-gray">
                                         <i class="fa fa-user fa-fw"></i>Blinkfox
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-action article-tags">
-                            <i class="fa fa-tag fa-lg fa-fw bf-text-color"></i>
                             <span class="chip bf-color">Java</span>
                             <span class="chip bf-color">Linux</span>
                             <span class="chip bf-color">Ghost</span>
@@ -249,63 +275,29 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 article">
+                <div class="article col s12 m6 l4">
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/images/default.jpg" alt="文章特色图片">
                             <span class="card-title">这个是文章标题</span>
                         </div>
                         <div class="card-content article-content">
-                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想，
-                                那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
+                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想， 那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
                             </p>
                             <ul>
                                 <li>
-                                    <a class="bf-text-color">
+                                    <a class="bf-text-gray">
                                         <i class="fa fa-calendar fa-fw"></i>4天前
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" target="_blank" class="bf-text-color">
+                                    <a href="#!" target="_blank" class="bf-text-gray">
                                         <i class="fa fa-user fa-fw"></i>Blinkfox
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-action article-tags">
-                            <i class="fa fa-tag fa-lg fa-fw bf-text-color"></i>
-                            <span class="chip bf-color">Java</span>
-                            <span class="chip bf-color">Linux</span>
-                            <span class="chip bf-color">Ghost</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l4 article">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/images/default.jpg" alt="文章特色图片">
-                            <span class="card-title">这个是文章标题</span>
-                        </div>
-                        <div class="card-content article-content">
-                            <p>生活像一个杯子。一开始，里面是空的，之后，要看你怎么对待它。如果你只往不如意的方面想，
-                                那么你最终辉得到一杯苦水。如果你往好的方面想，那么你最终会得到一杯清泉。
-                            </p>
-                            <ul>
-                                <li>
-                                    <a class="bf-text-color">
-                                        <i class="fa fa-calendar fa-fw"></i>4天前
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!" target="_blank" class="bf-text-color">
-                                        <i class="fa fa-user fa-fw"></i>Blinkfox
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action article-tags">
-                            <i class="fa fa-tag fa-lg fa-fw bf-text-color"></i>
                             <span class="chip bf-color">Java</span>
                             <span class="chip bf-color">Linux</span>
                             <span class="chip bf-color">Ghost</span>
@@ -339,8 +331,7 @@
             <div class="col s12 m12 l8 copy-right">
                 本站由&copy;<a href="http://blinkfox.com" target="_blank">Blinkfox</a>基于
                 <a href="http://ghost.org/" target="_blank">Ghost</a> 采用
-                <a href="https://github.com/chenjiayin1990/ghost-matery" target="_blank">ghost-matery</a>主题搭建.
-                蜀ICP备15029027号
+                <a href="https://github.com/chenjiayin1990/ghost-matery" target="_blank">ghost-matery</a>主题搭建. 蜀ICP备15029027号
             </div>
             <div class="col s12 m12 l4 social-link hide-on-med-and-down">
                 <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
@@ -366,7 +357,7 @@
                 <i class="mdi-navigation-close"></i>
             </a>
             <div class="container row search-container">
-                <div class="col offset-s1 s10 offset-m2 m8 offset-l2 l8">
+                <div class="col offset-s1 s10 offset-m3 m8 offset-l4 l8">
                     <div class="search-label center-align">
                         <label for="s">输入关键字后‘回车’即可</label>
                     </div>
@@ -379,9 +370,9 @@
     </div>
 
     <!-- 主题颜色设置 -->
-    <div id="theme-change" left="-200" class="">
+    <div id="theme-change" left="-200" class="hide-on-med-and-down">
         <div class="theme-change-handle">
-            <i class="fa fa-gear fa-lg"></i>
+            <i class="fa fa-gear fa-lg fa-spin bf-text-color"></i>
         </div>
         <div class="theme-change-container">
             <h6>主题颜色面板</h6>
@@ -399,8 +390,8 @@
     </div>
 
     <!-- 回到顶部按钮 -->
-    <div class="top-scroll">
-        <a class="btn-floating btn-large waves-effect waves-light red accent-3" href="#topScroll">
+    <div id="backTop" class="top-scroll">
+        <a class="btn-floating btn-large waves-effect waves-light red accent-3" href="#!">
             <i class="fa fa-angle-double-up"></i>
         </a>
     </div>
@@ -411,6 +402,7 @@
         window.jQuery || document.write('<script src="assets/plugins/jquery/jquery-2.2.0.min.js"><\/script>')
     </script>
     <script type="text/javascript" src="assets/plugins/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/masonry/4.0.0/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
     <script type="text/javascript" src="assets/js/index.js"></script>
 </body>

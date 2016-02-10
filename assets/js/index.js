@@ -1,4 +1,14 @@
-/*设置主题时替换样式*/
+/*调色面板的开关方法*/
+function openOrClosePanel() {
+    var l = $('#theme-change').attr('left');
+    if (l == -200) {
+        $('#theme-change').attr('left', 0).animate({'left': '0'});
+    } else {
+        $('#theme-change').attr('left', -200).animate({'left': '-200px'});
+    }
+}
+
+/*设置主题时替换样式方法*/
 function replaceClass(color, c) {
     $('.' + c + 'color').each(function() {
         var newCls = '';
@@ -37,6 +47,11 @@ $(function() {
     $('.button-collapse').sideNav();
     initTheme();
 
+    /*初始化瀑布流布局*/
+    $('#articles').masonry({
+        itemSelector: '.article'
+    });
+
     /*显示和隐藏搜索*/
     $('#searchIcon').click(function() {
         $('#search-mask').fadeIn(300);
@@ -50,16 +65,7 @@ $(function() {
 
     /*调色面板显示开关*/
     $('#theme-change .theme-change-handle').click(function() {
-        var l = $('#theme-change').attr('left');
-        if (l == -200) {
-            $('#theme-change').attr('left', 0).animate({
-                'left': '0'
-            });
-        } else {
-            $('#theme-change').attr('left', -200).animate({
-                'left': '-200px'
-            });
-        }
+        openOrClosePanel();
     });
     /*调色面板某颜色选中样式设置*/
     $('#theme-change .theme-change-container ul li').click(function() {
@@ -68,10 +74,14 @@ $(function() {
         replaceClass(color, 'bf-');
         replaceClass(color, 'bf-text-');
         setLocalTheme(color);
+        openOrClosePanel();
     });
 
     /*回到顶部*/
-    $('.scrollSpy').scrollSpy();
+    $('#backTop').click(function() {
+        $('body,html').animate({scrollTop: 0}, 400);
+        return false;
+    });
 
     /*监听滚动条位置*/
     $(window).scroll(function(event) {
@@ -86,12 +96,10 @@ $(function() {
 
         /*回到顶部按钮根据滚动条的位置的显示和隐藏*/
         var ts = $('.top-scroll');
-        if (t < 50) {
-            ts.hide();
+        if (t < 100) {
+            ts.fadeOut();
         } else {
-            ts.show();
+            ts.fadeIn();
         }
     });
-
-
 });

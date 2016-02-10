@@ -1,10 +1,25 @@
 /*全局基础样式*/
+/*小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 601px) {
+    .container {
+        width: 95%;
+    }
+}
+/*中等屏幕下(平板类)的样式*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .container {
+        width: 85%;
+    }
+}
+/*大屏幕下(桌面类)的样式*/
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 75%;
+    }
+}
 body {
     background-color: #e5e5e5;
     margin: 0;
-}
-.container {
-    width: 90%;
 }
 .container .row {
     margin-bottom: 0px;
@@ -14,6 +29,9 @@ body {
 }
 .bf-text-color {
     color: #3f51b5 !important;
+}
+.bf-text-gray {
+    color: #666;
 }
 .none-shadow {
     box-shadow: none;
@@ -122,6 +140,13 @@ header .side-nav .social-link {
 }
 
 /*文章列表卡片各样式*/
+article a {
+    margin-right: 0px !important;
+    color: #212121;
+}
+article .card-image img {
+    height: 230px;
+}
 article .article-content ul {
     padding-bottom: 2px;
     padding-left: 0;
