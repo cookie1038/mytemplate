@@ -42,10 +42,22 @@ function initTheme() {
     }
 }
 
+/*设置所有文章div的宽度*/
+function setArtWidth() {
+    var w = $('#navContainer').width();
+    $('#articles').width(w + 21);
+}
+
 $(function() {
     /*菜单切换*/
     $('.button-collapse').sideNav();
     initTheme();
+
+    setArtWidth();
+    /*调整屏幕宽度时重新设置文章列的宽度，修复小间距问题*/
+    $(window).resize(function() {
+        setArtWidth();
+    });
 
     /*初始化瀑布流布局*/
     $('#articles').masonry({
