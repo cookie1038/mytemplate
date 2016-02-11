@@ -31,7 +31,7 @@ body {
     color: #3f51b5 !important;
 }
 .bf-text-gray {
-    color: #666;
+    color: #777;
 }
 .none-shadow {
     box-shadow: none;
@@ -144,6 +144,13 @@ article a {
     margin-right: 0px !important;
     color: #212121;
 }
+.articles .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.articles .article {
+    /*margin-left: -5px !important;*/
+}
 article .card-image img {
     height: 230px;
 }
@@ -164,6 +171,10 @@ article .article-tags .chip {
     line-height: 22px;
     color: #fff;
     border-radius: 10px;
+}
+.paging .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 .paging .page-info {
     font-size: 1.4rem;

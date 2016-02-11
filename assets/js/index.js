@@ -45,7 +45,16 @@ function initTheme() {
 /*设置所有文章div的宽度*/
 function setArtWidth() {
     var w = $('#navContainer').width();
-    $('#articles').width(w + 21);
+    if (w >= 450) {
+        w = w + 21;
+    } else if (w >= 350 && w < 450) {
+        w = w + 18;
+    } else if (w >= 300 && w < 350) {
+        w = w + 16;
+    } else {
+        w = w + 14;
+    }
+    $('#articles').width(w);
 }
 
 $(function() {
