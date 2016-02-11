@@ -51,10 +51,10 @@ body {
     color: #e91e63 !important;
 }
 .bf-red {
-    background-color: #db4437 !important;
+    background-color: #F44336 !important;
 }
 .bf-text-red {
-    color: #db4437 !important;
+    color: #F44336 !important;
 }
 .bf-orange {
     background-color: #ff9800 !important;
@@ -69,10 +69,10 @@ body {
     color: #0f9d58 !important;
 }
 .bf-purple {
-    background-color: purple !important;
+    background-color: #9c27b0 !important;
 }
 .bf-text-purple {
-    color: purple !important;
+    color: #9c27b0 !important;
 }
 
 /*头部导航栏样式*/
