@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>博文列表</title>
+    <meta name="description" content="html5 materialize template">
+    <meta name="keywords" content="html5, materialize, material, material design">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link type="text/css" rel="stylesheet" href="assets/plugins/awesome/css/font-awesome.min.css" />
+    <!--Import styles-->
+    <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/plugins/prism/prism.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/screen.css" />
+</head>
+
+<body>
+
+    <!-- 头部导航区 -->
+    <header class="navbar-fixed">
+        <nav id="headNav" class="bf-color none-shadow">
+            <div id="navContainer" class="container">
+                <div class="nav-wrapper">
+                    <div class="brand-logo">
+                        <a href="#!" class="waves-effect waves-light">
+                            <span class="logo-span">设 置</span>
+                        </a>
+                    </div>
+                    <a href="javascript: history.go(-1)" class="left hide-on-large-only go-back">
+                        <i class="fa fa-arrow-left fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="settings-content">
+        <ul id="themeSetting" class="collection with-header">
+            <li class="collection-header"><h5 class="bf-text-color">主题设置</h5></li>
+            <li class="collection-item">
+                <div>
+                    <span class="bf-text-blue cval" data-colors="blue">蓝 色</span>
+                    <a href="#!" class="secondary-content bf-text-gray change">
+                        <i class="fa fa-send fa-lg"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div>
+                    <span class="bf-text-pink cval" data-colors="pink">粉 色</span>
+                    <a href="#!" class="secondary-content bf-text-gray change">
+                        <i class="fa fa-send fa-lg"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div>
+                    <span class="bf-text-orange cval" data-colors="orange">橘红色</span>
+                    <a href="#!" class="secondary-content bf-text-gray change">
+                        <i class="fa fa-send fa-lg"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div>
+                    <span class="bf-text-green cval" data-colors="green">绿 色</span>
+                    <a href="#!" class="secondary-content bf-text-gray change">
+                        <i class="fa fa-send fa-lg"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div>
+                    <span class="bf-text-red cval" data-colors="red">红 色</span>
+                    <a href="#!" class="secondary-content bf-text-gray change">
+                        <i class="fa fa-send fa-lg"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div>
+                    <span class="bf-text-purple cval" data-colors="purple">紫 色</span>
+                    <a href="#!" class="secondary-content bf-text-gray change">
+                        <i class="fa fa-send fa-lg"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <!--Import jQuery before materialize.js-->
+    <!--<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.0/jquery.js"></script> -->
+    <script>
+        window.jQuery || document.write('<script src="assets/plugins/jquery/jquery-2.2.0.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="assets/plugins/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/plugins/masonry/masonry.pkgd.js"></script>
+    <!-- <script type="text/javascript" src="http://cdn.bootcss.com/masonry/4.0.0/masonry.pkgd.min.js"></script> -->
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script>
+        /*获取并设置当前主题颜色高亮*/
+        function setNowHightline() {
+            var theme = window.localStorage.getItem('bfTheme');
+            theme = theme ? theme : 'blue';
+            $('#themeSetting .cval').each(function() {
+                var color = $(this).attr('data-colors');
+                if (color == theme) {
+                    $(this).next().addClass('bf-text-' + color);
+                    return;
+                }
+            });
+        }
+
+        $(function() {
+            setNowHightline();
+            $('#themeSetting .change').click(function() {
+                var color = $(this).prev().attr('data-colors');
+                $('#themeSetting .change').each(function() {
+                    var newCls = '';
+                    var cls =  $(this).attr('class').split(' ');
+                    /*遍历去掉老的颜色值*/
+                    for (var i = 0; i < cls.length; i++) {
+                        var cl = cls[i];
+                        if ((cl.indexOf('bf-text') < 0) || ('bf-text-gray' == cl)) {
+                            newCls = (i == cls.length - 1) ? newCls + cl : newCls + cl + ' ';
+                        }
+                    }
+                    newCls = $.trim(newCls);
+                    $(this).attr('class', newCls);
+                });
+                /*设置新的颜色值*/
+                $(this).addClass('bf-text-' + color);
+                replaceClass(color, 'bf-');
+                replaceClass(color, 'bf-text-');
+                setLocalTheme(color);
+            });
+        });
+    </script>
+</body>
+
+</html>

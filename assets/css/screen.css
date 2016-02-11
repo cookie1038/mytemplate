@@ -21,6 +21,10 @@ body {
     background-color: #e5e5e5;
     margin: 0;
 }
+hr {
+    border: 0;
+    border-top: 1px solid #aaa;
+}
 .container .row {
     margin-bottom: 0px;
 }
@@ -78,7 +82,8 @@ body {
 /*头部导航栏样式*/
 @media only screen and (max-width: 600px) {
     header nav .brand-logo {
-        left: 100px;
+        left: 80px;
+        font-size: 1.8rem;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
@@ -115,6 +120,9 @@ header .side-nav .menu-list a{
     height: 50px;
     line-height: 50px;
 }
+header .side-nav .menu-list a i {
+    line-height: 16px;
+}
 header .side-nav .fa-fw {
     width: 3.8rem;
     text-align: left;
@@ -128,6 +136,17 @@ header .side-nav .social-link {
     display: initial;
     padding: 0 12px;
 }
+header .go-back {
+    float: left;
+    position: relative;
+    z-index: 1;
+    height: 56px;
+}
+header .go-back i {
+    font-size: 1.7rem;
+    font-weight: 200;
+    line-height: 1.7rem;
+}
 
 /*内容头部样式*/
 .content .content-heading {
@@ -138,18 +157,19 @@ header .side-nav .social-link {
     overflow: hidden;
     transition: background-color .3s cubic-bezier(.4,0,.2,1),color .3s cubic-bezier(.4,0,.2,1);
 }
+.settings-content {
+    margin-top: -10px;
+}
 
 /*文章列表卡片各样式*/
 article a {
     margin-right: 0px !important;
     color: #212121;
+    text-transform: none !important;
 }
 .articles .row {
     margin-left: 0;
     margin-right: 0;
-}
-.articles .article {
-    /*margin-left: -5px !important;*/
 }
 article .card-image img {
     height: 230px;

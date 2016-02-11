@@ -60,6 +60,8 @@ function setArtWidth() {
 $(function() {
     /*菜单切换*/
     $('.button-collapse').sideNav();
+
+    /*初始化主题*/
     initTheme();
 
     setArtWidth();
