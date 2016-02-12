@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>博文列表</title>
+    <meta name="description" content="html5 materialize template">
+    <meta name="keywords" content="html5, materialize, material, material design">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link type="text/css" rel="stylesheet" href="assets/plugins/awesome/css/font-awesome.min.css" />
+    <!--Import styles-->
+    <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/plugins/prism/prism.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/screen.css" />
+</head>
+
+<body>
+
+    <!-- 头部导航区 -->
+    <header class="navbar-fixed">
+        <nav id="headNav" class="bf-color none-shadow">
+            <div id="navContainer" class="container">
+                <div class="nav-wrapper">
+                    <div class="brand-logo">
+                        <a href="#!" class="waves-effect waves-light">
+                            <img src="assets/images/logo.png" class="logo-img hide-on-small-only">
+                            <span class="logo-span">Blinkfox</span>
+                        </a>
+                    </div>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+                    <ul class="right">
+                        <li class="hide-on-med-and-down">
+                            <a href="#" class="waves-effect waves-light">首页</a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="#" class="waves-effect waves-light">关于</a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="#" class="waves-effect waves-light">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#!" id="toggle-search" class="waves-effect waves-light">
+                                <i id="searchIcon" class="mdi-action-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="side-nav" id="mobile-nav">
+                        <div class="mobile-head bf-color">
+                            <img src="assets/images/head_pic.jpg" class="logo-img circle responsive-img">
+                            <div class="logo-name">Blinkfox</div>
+                            <div class="logo-desc">从来没有真正的绝境，只有心灵的迷途</div>
+                        </div>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="fa fa-home fa-lg fa-fw"></i>首 页
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="fa fa-book fa-lg fa-fw"></i>关 于
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="fa fa-comment fa-lg fa-fw"></i>联系我们
+                                </a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="settings.html" class="waves-effect waves-light">
+                                    <i class="fa fa-gear fa-lg fa-fw"></i>设 置
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="social-link">
+                            <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+                                <i class="fa fa-github fa-lg"></i>
+                            </a>
+                            <a href="mailto:chenjiayin1990@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+                                <i class="fa fa-envelope fa-lg"></i>
+                            </a>
+                            <a href="#!" class="tooltipped" data-tooltip="QQ号：1181062873" data-position="top" data-delay="50">
+                                <i class="fa fa-qq fa-lg"></i>
+                            </a>
+                            <a href="#!" class="tooltipped" data-tooltip="RSS" target="_blank" data-position="top" data-delay="50">
+                                <i class="fa fa-rss fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="content">
+        <!-- 头部融合背景标题 -->
+        <div class="content-heading bf-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h2 class="heading">Git常用命令的整理</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文章内容详情 -->
+        <div id="artDetail" class="container notice">
+            <div class="card">
+                <div class="card-content">
+                    <div class="article-tag">
+                        <a href="#!" target="_blank"><span class="chip bf-color">Java</span></a>
+                        <a href="#!" target="_blank"><span class="chip bf-color">Linux</span></a>
+                        <a href="#!" target="_blank"><span class="chip bf-color">Ghost</span></a>
+                    </div>
+                    <div class="author-info">
+                        <span>
+                            <a class="bf-text-gray">
+                                <i class="fa fa-calendar fa-fw"></i>2天前
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#!" target="_blank" class="bf-text-gray">
+                                <i class="fa fa-user fa-fw"></i>Blinkfox
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="card-content article-card-content">
+                    <div id="articleContent">
+                        <h2>Git常用命令的整理</h2>
+                        <div class="md-section-divider"></div>
+                        <h3>Git介绍</h3>
+                        <p><code>Git</code>是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是<strong>Linus Torvalds</strong>为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。</p>
+                        <p>Torvalds开始着手开发Git是为了作为一种过渡方案来替代<code>BitKeeper</code>，后者之前一直是Linux内核开发人员在全球使用的主要源代码工具。开放源码社区中的有些人觉得BitKeeper的许可证并不适合开放源码社区的工作，因此Torvalds决定着手研究许可证更为灵活的版本控制系统。尽管最初Git的开发是为了辅助Linux内核开发的过程，但是越来越多的软件项目中也开始采用Git来管理项目开发。</p>
+                        <p><img src="http://static.blinkfox.com/git.png" alt="Git图" title=""></p>
+                        <p>
+                            <img src="assets/images/default.jpg" alt="默认图片" />
+                        </p>
+                        <div></div>
+                        <h3>Git的常用命令整理</h3>
+                        <p>我使用Git已经两年多了，最开始仅仅使用来管理自己的项目，后来的团队开发中才学到Git中更多的功能，无论是Windows、Mac、还是Linux,各个平台下的Git也都使用过，对Git的理解也越来越深。工作中更多用到的是可视化操作的客户端软件，这里推荐使用<a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a>。</p>
+                        <blockquote>
+                            <p><code>SourceTree</code>拥有一个精美简洁的界面和完整的Git功能，大大简化了开发者与代码库之间的Git操作方式，这对于那些不熟悉Git命令的开发者来说非常实用,但是<code>SourceTree</code>只支持Windows和OSX两个平台。</p>
+                        </blockquote>
+                        <p>自己的笔记本装的是Linux,供平时自己开发使用，在Linux下Git的使用当然还是要回归到命令行上来，Git的神奇就在于命令行比客户端反而更好用。以下是自己平时用到或将会用到的一些常用命令的整理吧，其中参考了许多其他博客中的整理思路。</p>
+                        <pre>
+                            <code class="language-bash">
+                                # 这是注释
+                                rm -rf *
+                            </code>
+                        </pre>
+                        <h3>Git直观的常用命令图表</h3>
+                        <p>下面是收集的一些常用命令的一张直观易懂的图表，供参考：</p>
+                        <p><img src="http://static.blinkfox.com/150803103365301.png" alt="Git常用命令" title=""></p>
+                        <p>Git学习的一些参考链接如下：</p>
+                        <p><a href="http://git-scm.com/book/zh/v2/" target="_blank">Pro Git</a></p>
+                        <p><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html" target="_blank">Git Magic</a></p>
+                    </div>
+
+                    <hr />
+                    <br />
+                    <p>转载请注明：<a href="http://blinkfox.com" class="b-link-green">闪烁之狐的博客</a> &raquo; <a href="http://yusi123.com/3697.html" class="b-link-green">程序员之梦：盲人程序员是如何编程的？</a>
+                    </p>
+                    <div class="article-share">
+                        分享到：
+                        <div class="bdsharebuttonbox">
+                            <a href="#" class="bds_more" data-cmd="more"></a>
+                            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                            <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        </div>
+                        <script>
+                            window._bd_share_config = {
+                                "common": {
+                                    "bdSnsKey": {},
+                                    "bdText": "",
+                                    "bdMini": "2",
+                                    "bdMiniList": false,
+                                    "bdPic": "",
+                                    "bdStyle": "1",
+                                    "bdSize": "24"
+                                },
+                                "share": {}
+                            };
+                            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- 上一篇和下一篇功能 -->
+            <div class="prenext-card card">
+                <div class="prenext-row row">
+                    <div class="prenext col s12 m6 l6">
+                        <p class="pn-title">上一篇</p>
+                        <div>
+                            <a href="#!">恢复更新。收到个Solo One蓝牙音箱，不错</a>
+                        </div>
+                    </div>
+                    <div class="prenext col s12 m6 l6">
+                        <p class="pn-title">下一篇</p>
+                        <div>
+                            <a href="#!">恢复更新。收到个Solo One蓝牙音箱，不错</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 尾部内容 -->
+    <footer class="page-footer bf-color">
+        <div class="container row center-align">
+            <div class="col s12 m12 l8 copy-right">
+                本站由&copy;<a href="http://blinkfox.com" target="_blank">Blinkfox</a>基于
+                <a href="http://ghost.org/" target="_blank">Ghost</a> 采用
+                <a href="https://github.com/chenjiayin1990/ghost-matery" target="_blank">ghost-matery</a>主题搭建. 蜀ICP备15029027号
+            </div>
+            <div class="col s12 m12 l4 social-link hide-on-med-and-down">
+                <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+                    <i class="fa fa-github fa-lg"></i>
+                </a>
+                <a href="mailto:chenjiayin1990@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+                    <i class="fa fa-envelope fa-lg"></i>
+                </a>
+                <a href="#!" class="tooltipped" data-tooltip="QQ号：1181062873" data-position="top" data-delay="50">
+                    <i class="fa fa-qq fa-lg"></i>
+                </a>
+                <a href="#!" class="tooltipped" data-tooltip="RSS" target="_blank" data-position="top" data-delay="50">
+                    <i class="fa fa-rss fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 搜索遮罩框 -->
+    <div id="search-mask" style="display: none;">
+        <form class="search-form" action="#!" autocomplete="off">
+            <a href="#!" onclick="return false;" class="search-close">
+                <i class="mdi-navigation-close"></i>
+            </a>
+            <div class="container row search-container">
+                <div class="col offset-s1 s10 offset-m3 m8 offset-l4 l8">
+                    <div class="search-label center-align">
+                        <label for="s">输入关键字后‘回车’即可</label>
+                    </div>
+                    <div>
+                        <input type="search" id="searchKey" name="s" class="search-input" autofocus="">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- 主题颜色设置 -->
+    <div id="theme-change" left="-200" class="hide-on-med-and-down">
+        <div class="theme-change-handle">
+            <i class="fa fa-gear fa-lg fa-spin bf-text-color"></i>
+        </div>
+        <div class="theme-change-container">
+            <h6>主题颜色面板</h6>
+            <div id="theme-panel">
+                <ul>
+                    <li class="bf-blue" data-colors="blue"></li>
+                    <li class="bf-pink" data-colors="pink"></li>
+                    <li class="bf-orange" data-colors="orange"></li>
+                    <li class="bf-green" data-colors="green"></li>
+                    <li class="bf-red" data-colors="red"></li>
+                    <li class="bf-purple" data-colors="purple"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <div id="backTop" class="top-scroll">
+        <a class="btn-floating btn-large waves-effect waves-light red accent-3" href="#!">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <!--<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.0/jquery.js"></script> -->
+    <script>
+        window.jQuery || document.write('<script src="assets/plugins/jquery/jquery-2.2.0.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="assets/plugins/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/plugins/masonry/masonry.pkgd.js"></script>
+    <!-- <script type="text/javascript" src="http://cdn.bootcss.com/masonry/4.0.0/masonry.pkgd.min.js"></script> -->
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -21,9 +21,68 @@ body {
     background-color: #e5e5e5;
     margin: 0;
 }
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 4.0rem;
+}
+h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 3.6rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3.0rem;
+}
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.0rem;
+}
+h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+p {
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+    line-height: 1.8rem;
+}
 hr {
     border: 0;
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #ccc;
+}
+blockquote {
+    border-left: 5px solid #27ae60;
+    padding: 1.2rem 1rem 1.2rem 1.5rem;
+    color: #666;
+    background-color: #f1f8e9;
+}
+code[class*="language-"], pre[class*="language-"] {
+    color: #32cd45;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+small {
+    font-size: 85%;
+}
+cite {
+    font-style: normal;
+}
+mark {
+    background-color: #fcf8e3;
+    padding: .2em;
 }
 .container .row {
     margin-bottom: 0px;
@@ -35,7 +94,10 @@ hr {
     color: #3f51b5 !important;
 }
 .bf-text-gray {
-    color: #777;
+    color: #777 !important;
+}
+.bf-link {
+    color: #3f51b5 !important;
 }
 .none-shadow {
     box-shadow: none;
@@ -150,8 +212,8 @@ header .go-back i {
 
 /*内容头部样式*/
 .content .content-heading {
-    margin-bottom: -60px;
-    padding-bottom: 100px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
     color: #fff;
     z-index: 0;
     overflow: hidden;
@@ -204,6 +266,47 @@ article .article-tags .chip {
 }
 .paging i {
     font-size: 2.5rem;
+}
+
+/*文章详情样式*/
+#artDetail a {
+    margin-right: 0px !important;
+    color: #4078c0;
+    text-transform: none !important;
+}
+
+#artDetail .article-tag {
+    margin-bottom: 13px;
+}
+#artDetail .article-tag .chip {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+#artDetail .author-info span {
+    margin-right: 30px;
+}
+#artDetail .article-card-content {
+    padding: 5px 20px 20px;
+}
+#artDetail .article-share {
+    margin-top: 15px;
+}
+.prenext-card .prenext-row {
+    padding: 10px;
+}
+.prenext-card .prenext {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.prenext-card .pn-title {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 /*尾部样式*/

@@ -57,6 +57,17 @@ function setArtWidth() {
     $('#articles').width(w);
 }
 
+/*文章内容详情的一些初始化特性*/
+function articleInit() {
+    /*给文章详情内容图片增加light box特效和响应式的class样式*/
+    // $('#articleContent img').each(function() {
+    //     $(this).addClass('materialboxed').addClass('responsive-img');
+    // });
+    $('#articleContent img').addClass('materialboxed').addClass('responsive-img');
+    $('#articleContent a').attr('target', '_blank').addClass('bf-text-color');
+    $('.materialboxed').materialbox();
+}
+
 $(function() {
     /*菜单切换*/
     $('.button-collapse').sideNav();
@@ -74,6 +85,9 @@ $(function() {
     $('#articles').masonry({
         itemSelector: '.article'
     });
+
+    /*初始化文章内容的一些显示特性*/
+    articleInit();
 
     /*显示和隐藏搜索*/
     $('#searchIcon').click(function() {
