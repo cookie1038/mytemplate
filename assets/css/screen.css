@@ -297,6 +297,9 @@ article .article-tags .chip {
 #artDetail .article-share {
     margin-top: 15px;
 }
+#artDetail .article-share .bdsharebuttonbox a {
+    margin-right: 8px !important;
+}
 .prenext-card .prenext-row {
     padding: 10px;
 }
