@@ -275,7 +275,6 @@ article .article-tags .chip {
     color: #4078c0;
     text-transform: none !important;
 }
-
 #artDetail .article-tag {
     margin-bottom: 13px;
 }
@@ -301,9 +300,6 @@ article .article-tags .chip {
 }
 #artDetail .article-share .jt-share {
     margin-top: 5px;
-}
-#artDetail .article-share .bdsharebuttonbox a {
-    margin-right: 8px !important;
 }
 .prenext-card .prenext-row {
     padding: 10px;
