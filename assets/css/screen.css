@@ -56,8 +56,9 @@ p {
     line-height: 1.8rem;
 }
 hr {
+    margin: 20px 0;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #999;
 }
 blockquote {
     border-left: 5px solid #27ae60;
