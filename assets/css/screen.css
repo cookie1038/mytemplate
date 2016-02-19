@@ -295,7 +295,11 @@ article .article-tags .chip {
     padding: 5px 20px 20px;
 }
 #artDetail .article-share {
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+#artDetail .article-share .jt-share {
+    margin-top: 5px;
 }
 #artDetail .article-share .bdsharebuttonbox a {
     margin-right: 8px !important;
