@@ -66,6 +66,7 @@ function articleInit() {
     $('#articleContent img').addClass('materialboxed').addClass('responsive-img');
     $('#articleContent a').attr('target', '_blank').addClass('bf-text-color');
     $('.materialboxed').materialbox();
+    $('.modal-trigger').leanModal();
 }
 
 $(function() {
@@ -134,9 +135,9 @@ $(function() {
         /*回到顶部按钮根据滚动条的位置的显示和隐藏*/
         var ts = $('.top-scroll');
         if (t < 100) {
-            ts.fadeOut();
+            ts.slideUp(300);
         } else {
-            ts.fadeIn();
+            ts.slideDown(300);
         }
     });
 });

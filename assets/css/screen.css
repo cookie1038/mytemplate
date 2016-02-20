@@ -56,8 +56,9 @@ p {
     line-height: 1.8rem;
 }
 hr {
+    margin: 20px 0;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #999;
 }
 blockquote {
     border-left: 5px solid #27ae60;
@@ -274,7 +275,6 @@ article .article-tags .chip {
     color: #4078c0;
     text-transform: none !important;
 }
-
 #artDetail .article-tag {
     margin-bottom: 13px;
 }
@@ -295,7 +295,11 @@ article .article-tags .chip {
     padding: 5px 20px 20px;
 }
 #artDetail .article-share {
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+#artDetail .article-share .jt-share {
+    margin-top: 5px;
 }
 .prenext-card .prenext-row {
     padding: 10px;
