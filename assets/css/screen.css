@@ -103,6 +103,9 @@ mark {
 .none-shadow {
     box-shadow: none;
 }
+.modal.bottom-sheet {
+    max-height: 65%;
+}
 
 /*各主题背景颜色和文字颜色样式*/
 .bf-blue {
@@ -413,6 +416,11 @@ footer .copy-right {
 }
 #theme-change .theme-change-container ul li.selected {
     outline: 2px solid black;
+}
+#themeModal .theme-settings div {
+    margin: 7px;
+    width: 72px;
+    height: 72px;
 }
 
 /*回到顶部按钮样式*/
